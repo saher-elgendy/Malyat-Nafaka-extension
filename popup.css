@@ -1,0 +1,238 @@
+body {
+    width: 400px;
+    overflow-y: scroll;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 100%;
+}
+
+.all-drugs {
+    overflow-y: scroll;
+    height: 400px;
+    border: 1px solid #eee
+}
+
+ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+li {
+    display: flex;
+}
+
+.all-drugs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drug-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 60px;
+    color: white;
+    border-radius: 4px;
+    padding: 1rem;
+    background: #0085cd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+#add-btn-label {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.modify-btn {
+    background-color: #7700cd;
+}
+
+input {
+    padding: 0.5rem;
+    width: 80%;
+    margin: auto;
+    font-size: 0.9rem;
+}
+
+.date-note {
+    border: 2px solid #000 !important;
+    background: #eee !important
+}
+
+.date-control {
+    display: flex;
+}
+
+.date {
+    width: 50px;
+    margin: 0
+}
+
+#set-date-btn {
+    width: 90px;
+    padding: 1rem;
+    color: white;
+    background: #0085cd
+}
+
+.label {
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.note-control {
+    display: flex;
+    align-items: center;
+    margin-top: 1em
+}
+
+.delete-btn {
+    color: #000;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 1rem;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.delete-btn:hover {
+    opacity: 1
+}
+
+#add-drug-modal {
+    position: absolute;
+    top: 10%;
+    z-index: 1000;
+    background: #eee;
+    width: 80%;
+    margin: auto;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+#add-drug-btn {
+    width: 100px;
+    background: #c03434
+}
+
+.modal {
+    padding: 0.5rem;
+}
+
+.modal-content {
+    position: relative;
+    text-align: right;
+}
+
+#close-modal-btn {
+    padding: 1rem;
+    cursor: pointer;
+    right: 1.5rem;
+}
+
+.modal-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.modal-input {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+
+#add-to-list-btn, #modify-drug-btn {
+    margin: auto;
+    background: #22d62e;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.opened {
+    display: block;
+}
+
+.closed {
+    display: none;
+}
+
+#error {
+    color: red;
+    visibility: hidden;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    display: block;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+}
+
+.footer p {
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: 0.3rem;
+    color: #817a7a;
+}
+
+/* delete drug modal */
+#delete-drug-modal {
+    position: absolute;
+    border: 2px solid hsl(0, 2%, 61%);
+    padding: 1rem;
+    border-radius: 4px;
+    width: 80%;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 1000;
+    outline: 9999px solid rgba(0, 0, 0, 0.5);
+    background: #fff;
+}
+
+.delete-modal-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete-modal-btn {
+    font-size: 1.1rem;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+.delete-modal-msg {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+#ok-btn {
+    background: rgb(130, 209, 12)
+}
+
+#discard-btn {
+    background: red
+}

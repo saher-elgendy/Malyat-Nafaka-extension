@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body id="body">
+    <div id="add-drug-modal" class="modal closed">
+        <div class="modal-content">
+            <span id="close-modal-btn">x</span>
+            <div class="modal-inputs">
+                <input placeholder="اسم الصنف" class="modal-input" data-id="name" />
+                <input placeholder="الكود" class="modal-input" data-id="code" />
+                <input placeholder="سعر الوحدة" class="modal-input" data-id="price" />
+                <input placeholder=" (خانة اختيارية) الترتيب فى القائمة" class="modal-input" data-id="order" />
+            </div>
+        </div>
+        <button id="add-to-list-btn">اضافة</button>
+        <button id="modify-drug-btn">تعديل</button>
+        <span id="error"></span>
+    </div>
+
+    <div id="delete-drug-modal">
+        <p class="delete-modal-msg">هل تريد تاكيد الحذف؟</p>
+        <div class="delete-modal-btns">
+            <button class="delete-modal-btn" id="ok-btn">موافق</button>
+            <button class="delete-modal-btn" id="discard-btn">لا</button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="all-drugs">
+            <ul id="drug-list"></ul>
+        </div>
+        <div class="date-note">
+            <div class="date-control">
+                <span class="label">التاريخ:</span>
+                <input placeholder="day" id="day" class="date" />
+                <input placeholder="month" id="month" class="date" />
+                <input placeholder="year" id="year" class="date" />
+                <!-- <button id="set-date-btn"><span>Set Date</span></button> -->
+            </div>
+            <div class="note-control">
+                <span class="label" id="note-label">ملاحظات:</span>
+                <textarea name="note" cols="30" rows="3" id="note"></textarea>
+            </div>
+
+        </div>
+        <div class="footer">
+            <button id="add-drug-btn">اضافة صنف</button>
+            <p>Created By Dr Saher Elgendy</p>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
